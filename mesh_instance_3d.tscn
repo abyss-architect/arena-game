@@ -1,4 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://chk8lrha5cd2q"]
+[gd_scene load_steps=4 format=3 uid="uid://bscixo8w4rtjm"]
+
+[ext_resource type="ArrayMesh" uid="uid://bi1jutjhgoheu" path="res://Colosseum_Mesh_low.obj" id="1_yvhtj"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_6xxru"]
 
@@ -8,3 +10,7 @@ albedo_color = Color(1, 0, 0.416667, 1)
 [node name="MeshInstance3D" type="MeshInstance3D"]
 mesh = SubResource("BoxMesh_6xxru")
 surface_material_override/0 = SubResource("StandardMaterial3D_yvhtj")
+
+[node name="ColosseumMeshLow" type="MeshInstance3D" parent="."]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+mesh = ExtResource("1_yvhtj")
